@@ -1,0 +1,38 @@
+'''
+Created on Mar 25, 2020
+
+@author: Nasif K.
+'''
+"""List Overlap:
+Take two lists, say for example these two:
+a = [1,1,2,3,5,8,13,21,34,55,89]
+b = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+and write a program that returns a list that contains
+only the elements that are common between the lists
+(without duplicates). Make sure your program works on
+two lists of different sizes.
+
+Extras:
+1.Randomly generate two lists to test this.
+2.Write this in one line of python
+"""
+from random import randint
+a=[]
+b=[]
+num_a=randint(4,12)#program decides how many numbers in each list
+num_b=randint(4,12)
+for c in range(0,num_a):
+    a.append(randint(0,30))
+for d in range(0,num_b):
+    b.append(randint(0,30))
+print a
+print b
+#we just created two random lists
+same_list=[]
+for e in range(0,num_a):
+    if (a[e] in b):
+        same_list.append(a[e])
+if len(same_list)==0:
+    print "There are no commonalities."
+else:
+    print same_list
