@@ -1,0 +1,16 @@
+'''
+Created on Mar 26, 2020
+
+@author: Nasif K.
+'''
+"""String lists
+Ask the user for a string and print out whether
+this string is a palindrome or not."""
+
+print "Let's check palindromes!"
+word = raw_input("Please enter a word: \n ")
+reverse = word[::-1]
+if word == reverse:
+    print "This is a palindrome! \n"
+else:
+    print "This word is not a palindrome."
