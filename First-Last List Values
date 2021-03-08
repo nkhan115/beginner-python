@@ -1,0 +1,19 @@
+'''
+Created on Apr 11, 2020
+
+@author: Nasif K.
+'''
+"""List Ends
+Write a program that takes  a list of numbers
+and makes a new list of only the first and last
+elements of the given list"""
+
+from random import randint
+a=[]
+for n in range (0,10):
+    a.append(randint(0,100))
+print "Your list: \n", a, "\n"
+first_num=a[0]
+last_num=a[len(a)-1]
+print "First element: ", first_num, "\n"
+print "Last element: ", last_num, "\n"
