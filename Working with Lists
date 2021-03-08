@@ -1,0 +1,38 @@
+'''
+Created on Mar 23, 2020
+
+@author: Nasif K.
+'''
+"""Take a list, say for example this one:
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+and write a program that prints out all the
+elements of the list that are less than 5.
+
+Extras:
+1. Instead of printing the elements one by one, 
+make a new list that has all the elements less
+than 5 from this list in it and print out this
+new list.
+2. Ask the user for a number and return a list
+that contains only elements from the original list
+a that are smaller than the number given by the user"""
+
+a=[1,2,3,3,4,4,4,5,5,7,8,8,12,15,20]
+print "Here is the current list: \n"
+print a
+length = len(a)
+new_list=[]
+print "Numbers less than 5 in list: \n"
+for i in range(0,length):
+    if a[i]<5:
+        print "%d " %a[i]
+        new_list.append(a[i])
+
+
+print "Here are all the numbers in a new list: \n"
+print new_list
+
+find_num = int(raw_input("Enter a number to find numbers less than it\n"))
+for c in range(0, length):
+    if a[c]<find_num:
+        print "%d " %a[c]
